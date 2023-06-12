@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import font, messagebox
-
-class Ventana(tk.Tk):
+import gc
+class Aplicacion(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Calculadora IVA")
@@ -13,6 +13,7 @@ class Ventana(tk.Tk):
         self.__precio_sin_iva = tk.StringVar(value="0")
         self.__precio_sin_iva_entry = tk.Entry(self, textvariable=self.__precio_sin_iva, bg="light green")
         self.__precio_sin_iva_entry.grid(row=3, column=1, columnspan=2)
+        
         
         tk.Label(self, text="Calculadora Iva", bg="sky blue").grid(row=0, column=0, columnspan=4, sticky="nsew")
         tk.Label(self, text="Precio Sin Iva", bg="light green").grid(row=3, column=0)
@@ -43,19 +44,19 @@ class Ventana(tk.Tk):
     def calcular_precio_total(self):
         try:
             precio_base = float(self.__precio_sin_iva.get())
-            if precio_base < 0:
-                messagebox.showerror(title='Error de valor', message='Los valores ingresados deben ser positivos')
-            else:
-                iva = self.calcular_iva()
-                precio_total = precio_base + iva
-                self.__final.set("{:.2f}".format(precio_total))
+            iva = self.calcular_iva()
+            precio_total = precio_base + iva
+            self.__final.set("{:.2f}".format(precio_total))
             
         except ValueError:
-            tk.Label(self, text='Datos Incorrectos', font=("Arial", 16), fg="white", bg="red").grid(row=13, column=0, columnspan=5)
             messagebox.showerror(title='Error de valor', message='Los valores ingresados deben ser numéricos')
+    
+
             
 if __name__ == '__main__':
-    ventana = Ventana()
-    ventana.mainloop()
+    mi_app = Aplicacion()
+    mi_app.mainloop()
+    gc.collect()
+    
     
     
