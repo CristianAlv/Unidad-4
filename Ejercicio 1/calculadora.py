@@ -7,7 +7,7 @@ class Ventana(tk.Tk):
         self.title("Calculadora de IPC")
         self.configure(bg='yellow')
         self.__resultado = 0
-        
+        self.resizable(0,0)
         tk.Button(self, text='Salir', command=self.destroy).grid(column=4, row=5)
         tk.Button(self, text='Calculear', command=self.calcular).grid(column=3, row=5)
         tk.Label(self, text="Item").grid(row=0, column=0, padx=4, pady=5)
@@ -56,7 +56,7 @@ class Ventana(tk.Tk):
             self.__resultado = ipc
             return self.__resultado
         except(ValueError):
-                tk.Label(self, text='Datos Incorrectos', font=("Arial", 16), fg="white", bg="blue").grid(row=6, column=3)
+                tk.Label(self, text='Datos Incorrectos', font=("Arial", 16), fg="white", bg="red").grid(row=6, column=2)
                 messagebox.showerror(title='Error de valor', message='Los valores ingresados deben ser positivos')
                 return None
             
