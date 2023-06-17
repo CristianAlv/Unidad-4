@@ -1,27 +1,35 @@
+import cmath
 class Imaginario:
-    def __init__(self, real, imag):
+    def __init__(self, real, imaginario):
         self.real = real
-        self.imag = imag
+        self.imaginario = imaginario
+    
+    def getImaginario(self):
+        return self.imaginario
+    def getReal(self):
+        return self.real
 
-    # Sobrecarga del operador +
     def __add__(self, other):
-        return Imaginario(self.real + other.real, self.imag + other.imag)
+        real = self.real + other.real
+        imaginario = self.imaginario + other.imaginario
+        return Imaginario(real, imaginario)
 
-    # Sobrecarga del operador -
     def __sub__(self, other):
-        return Imaginario(self.real - other.real, self.imag - other.imag)
+        real = self.real - other.real
+        imaginario = self.imaginario - other.imaginario
+        return Imaginario(real, imaginario)
 
-    # Sobrecarga del operador *
     def __mul__(self, other):
-        return Imaginario(self.real * other.real - self.imag * other.imag, self.real * other.imag + self.imag * other.real)
+        real = (self.real * other.real) - (self.imaginario * other.imaginario)
+        imaginario = (self.real * other.imaginario) + (self.imaginario * other.real)
+        return Imaginario(real, imaginario)
 
-    # Sobrecarga del operador /
     def __truediv__(self, other):
-        denom = other.real ** 2 + other.imag ** 2
-        return Imaginario((self.real * other.real + self.imag * other.imag) / denom, (self.imag * other.real - self.real * other.imag) / denom)
+        divisor = (other.real ** 2) + (other.imaginario ** 2)
+        real = ((self.real * other.real) + (self.imaginario * other.imaginario)) / divisor
+        imaginario = ((self.imaginario * other.real) - (self.real * other.imaginario)) / divisor
+        return Imaginario(real, imaginario)
+                        
 
     def __str__(self):
-        if self.imag == 0:
-            return f"{self.real}"
-        else:
-            return f"{self.real} {self.imag}i"
+            return f"{str(self.real)} + {str(self.imaginario)}i"
