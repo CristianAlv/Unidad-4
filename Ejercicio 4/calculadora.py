@@ -20,10 +20,12 @@ class Calculadora:
         self.__primerOperando = None
         self.__segundoOperando = None
         self.__contador = 0
+        opts = { 'ipadx': 18, 'ipady': 60 , 'sticky': 's' }
         operatorEntry = ttk.Entry(mainframe, width=10, textvariable=self.__operador, justify='center', state='disabled')
         operatorEntry.grid(column=1, row=1, columnspan=1, sticky=(W, E))
         panelEntry = ttk.Entry(mainframe, width=20, textvariable=self.__panel, justify='right', state='disabled')
         panelEntry.grid(column=2, row=1, columnspan=2, sticky=(W, E))
+        
         ttk.Button(mainframe, text='1', command=partial(self.ponerNUMERO, '1')).grid(column=1, row=3, sticky=W)
         ttk.Button(mainframe, text='2', command=partial(self.ponerNUMERO, '2')).grid(column=2, row=3, sticky=W)
         ttk.Button(mainframe, text='3', command=partial(self.ponerNUMERO, '3')).grid(column=3, row=3, sticky=W)
@@ -40,11 +42,13 @@ class Calculadora:
         ttk.Button(mainframe, text='*', command=partial(self.ponerOPERADOR, '*')).grid(column=1, row=7, sticky=W)
         ttk.Button(mainframe, text='/', command=partial(self.ponerOPERADOR, '/')).grid(column=2, row=7, sticky=W)
         ttk.Button(mainframe, text='=', command=partial(self.ponerOPERADOR, '=')).grid(column=3, row=7, sticky=W)
+        color = ttk.Label(mainframe,text="a+bi", background='light yellow', font="Arial 12").grid(column=5,row=0, rowspan=6, **opts)
         ttk.Button(mainframe, text='+', command=partial(self.ponerNUMERO, '+')).grid(column=5, row=7, sticky=W)
         ttk.Button(mainframe, text='-', command=partial(self.ponerNUMERO, '-')).grid(column=5, row=6, sticky=W)
         ttk.Button(mainframe, text='*', command=partial(self.ponerNUMERO, '*')).grid(column=5, row=5, sticky=W)
         ttk.Button(mainframe, text='/', command=partial(self.ponerNUMERO, '/')).grid(column=5, row=4, sticky=W)
         ttk.Button(mainframe, text='C', command=self.borrarPanel).grid(column=4, row=4, sticky=W)
+        
         self.__panel.set('')
         panelEntry.focus()
         self.__ventana.mainloop()
