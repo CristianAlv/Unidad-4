@@ -14,16 +14,18 @@ class AplicacionPelicula(tk.Tk):
         self.resizable(0, 0)
         self.listBox = tk.Listbox(self, width=60)
         self.listBox.pack(pady=10)
-        self.listBox.config(bg="light green")
+        self.listBox.config(bg="light green", font='Underline 10')
         
         
     def SeleccionarPelicula(self, llamar):
         self.listBox.bind("<<ListboxSelect>>", llamar)
+
         
     def actualizar_lista(self, movies):
         self.listBox.delete(0, tk.END)
         for movie in movies:
             self.listBox.insert(tk.END, movie.gettitulo())
+
     
     
 
