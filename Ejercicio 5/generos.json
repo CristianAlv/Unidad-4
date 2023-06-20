@@ -61,27 +61,14 @@
     {
         "__class__": "Pelicula",
         "__atributos__": {
-            "title": "My Fault",
-            "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
-            "original_language": "es",
-            "release_date": "2023-06-08",
-            "genre_ids": [
-                10749,
-                18
-            ]
-        }
-    },
-    {
-        "__class__": "Pelicula",
-        "__atributos__": {
-            "title": "The Flash",
-            "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
+            "title": "Transformers: Rise of the Beasts",
+            "overview": "When a new threat capable of destroying the entire planet emerges, Optimus Prime and the Autobots must team up with a powerful faction known as the Maximals. With the fate of humanity hanging in the balance, humans Noah and Elena will do whatever it takes to help the Transformers as they engage in the ultimate battle to save Earth.",
             "original_language": "en",
-            "release_date": "2023-06-13",
+            "release_date": "2023-06-06",
             "genre_ids": [
-                878,
                 28,
-                12
+                12,
+                878
             ]
         }
     },
@@ -102,14 +89,14 @@
     {
         "__class__": "Pelicula",
         "__atributos__": {
-            "title": "Transformers: Rise of the Beasts",
-            "overview": "When a new threat capable of destroying the entire planet emerges, Optimus Prime and the Autobots must team up with a powerful faction known as the Maximals. With the fate of humanity hanging in the balance, humans Noah and Elena will do whatever it takes to help the Transformers as they engage in the ultimate battle to save Earth.",
+            "title": "The Flash",
+            "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
             "original_language": "en",
-            "release_date": "2023-06-06",
+            "release_date": "2023-06-14",
             "genre_ids": [
+                878,
                 28,
-                12,
-                878
+                12
             ]
         }
     },
@@ -130,15 +117,27 @@
     {
         "__class__": "Pelicula",
         "__atributos__": {
-            "title": "The Little Mermaid",
-            "overview": "The youngest of King Triton\u2019s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life \u2013 and her father\u2019s crown \u2013 in jeopardy.",
+            "title": "Extraction 2",
+            "overview": "Tasked with extracting a family who is at the mercy of a Georgian gangster, Tyler Rake infiltrates one of the world's deadliest prisons in order to save them. But when the extraction gets hot, and the gangster dies in the heat of battle, his equally ruthless brother tracks down Rake and his team to Sydney, in order to get revenge.",
             "original_language": "en",
-            "release_date": "2023-05-18",
+            "release_date": "2023-06-12",
             "genre_ids": [
+                28,
+                53
+            ]
+        }
+    },
+    {
+        "__class__": "Pelicula",
+        "__atributos__": {
+            "title": "Guardians of the Galaxy Vol. 3",
+            "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+            "original_language": "en",
+            "release_date": "2023-05-03",
+            "genre_ids": [
+                878,
                 12,
-                10751,
-                14,
-                10749
+                28
             ]
         }
     },
@@ -159,14 +158,28 @@
     {
         "__class__": "Pelicula",
         "__atributos__": {
-            "title": "Guardians of the Galaxy Vol. 3",
-            "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
-            "original_language": "en",
-            "release_date": "2023-05-03",
+            "title": "My Fault",
+            "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
+            "original_language": "es",
+            "release_date": "2023-06-08",
             "genre_ids": [
-                878,
+                10749,
+                18
+            ]
+        }
+    },
+    {
+        "__class__": "Pelicula",
+        "__atributos__": {
+            "title": "The Little Mermaid",
+            "overview": "The youngest of King Triton\u2019s daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life \u2013 and her father\u2019s crown \u2013 in jeopardy.",
+            "original_language": "en",
+            "release_date": "2023-05-18",
+            "genre_ids": [
                 12,
-                28
+                10751,
+                14,
+                10749
             ]
         }
     },
@@ -199,19 +212,6 @@
     {
         "__class__": "Pelicula",
         "__atributos__": {
-            "title": "Sisu",
-            "overview": "Deep in the wilderness of Lapland, Aatami Korpi is searching for gold but after he stumbles upon Nazi patrol, a breathtaking and gold-hungry chase through the destroyed and mined Lapland wilderness begins.",
-            "original_language": "fi",
-            "release_date": "2023-01-27",
-            "genre_ids": [
-                28,
-                10752
-            ]
-        }
-    },
-    {
-        "__class__": "Pelicula",
-        "__atributos__": {
             "title": "Ant-Man and the Wasp: Quantumania",
             "overview": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
             "original_language": "en",
@@ -226,47 +226,6 @@
     {
         "__class__": "Pelicula",
         "__atributos__": {
-            "title": "Extraction 2",
-            "overview": "Tasked with extracting a family who is at the mercy of a Georgian gangster, Tyler Rake infiltrates one of the world's deadliest prisons in order to save them. But when the extraction gets hot, and the gangster dies in the heat of battle, his equally ruthless brother tracks down Rake and his team to Sydney, in order to get revenge.",
-            "original_language": "en",
-            "release_date": "2023-06-12",
-            "genre_ids": [
-                28,
-                53
-            ]
-        }
-    },
-    {
-        "__class__": "Pelicula",
-        "__atributos__": {
-            "title": "Shazam! Fury of the Gods",
-            "overview": "Billy Batson and his foster siblings, who transform into superheroes by saying \"Shazam!\", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.",
-            "original_language": "en",
-            "release_date": "2023-03-15",
-            "genre_ids": [
-                35,
-                28,
-                14
-            ]
-        }
-    },
-    {
-        "__class__": "Pelicula",
-        "__atributos__": {
-            "title": "Accident Man: Hitman's Holiday",
-            "overview": "The Accident Man is back, and this time he must best the top assassins in the world to protect the ungrateful son of a mafia boss, save the life of his only friend and rekindle his relationship with his maniacal father figure.",
-            "original_language": "en",
-            "release_date": "2022-10-14",
-            "genre_ids": [
-                28,
-                35,
-                80
-            ]
-        }
-    },
-    {
-        "__class__": "Pelicula",
-        "__atributos__": {
             "title": "Guy Ritchie's The Covenant",
             "overview": "During the war in Afghanistan, a local interpreter risks his own life to carry an injured sergeant across miles of grueling terrain.",
             "original_language": "en",
@@ -275,6 +234,53 @@
                 10752,
                 28,
                 53
+            ]
+        }
+    },
+    {
+        "__class__": "Pelicula",
+        "__atributos__": {
+            "title": "Puss in Boots: The Last Wish",
+            "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
+            "original_language": "en",
+            "release_date": "2022-12-07",
+            "genre_ids": [
+                16,
+                10751,
+                14,
+                12,
+                35
+            ]
+        }
+    },
+    {
+        "__class__": "Pelicula",
+        "__atributos__": {
+            "title": "Sisu",
+            "overview": "Deep in the wilderness of Lapland, Aatami Korpi is searching for gold but after he stumbles upon Nazi patrol, a breathtaking and gold-hungry chase through the destroyed and mined Lapland wilderness begins.",
+            "original_language": "fi",
+            "release_date": "2023-01-27",
+            "genre_ids": [
+                28,
+                10752
+            ]
+        }
+    },
+    {
+        "__class__": "Pelicula",
+        "__atributos__": {
+            "title": "Operation Seawolf",
+            "overview": "During the last days of World War II, Germany, desperate for any last grasp to defeat the allied powers, looked to their last remaining weapons and soldiers. The German Navy and the last remaining U-Boats were formed together for one desperate last mission \u2013 a mission to attack the United States Homeland, known as Operation Seawolf. Captain Hans Kessler, a grizzled submarine commander from both World Wars, is called into service to make one mission a success and help turn the tide of the war.",
+            "original_language": "en",
+            "release_date": "2022-10-07",
+            "genre_ids": [
+                10752,
+                53,
+                28,
+                12,
+                9648,
+                878,
+                18
             ]
         }
     }

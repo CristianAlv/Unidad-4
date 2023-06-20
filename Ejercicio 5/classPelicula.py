@@ -10,7 +10,8 @@ class Pelicula:
         self.__lenguaje = moviedata["original_language"]
         self.__fecha = moviedata["release_date"]
         self.__generos = moviedata["genre_ids"]
-    
+    def getid(self):
+        return self.id
     def gettitulo(self):
         return self.__titulo
     
