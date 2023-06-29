@@ -11,12 +11,10 @@ class Controlador:
         self.__view.SeleccionarPelicula(self.MostrarDatosPeli)
         
         self.peli = self.__api.ObtenerPeliculas()
-        self.guardarEnArchivo()
+
         self.__view.actualizar_lista(self.peli)
     
-    def guardarEnArchivo(self):
-        peliculas_data = [pelicula.toJSON() for pelicula in self.peli]
-        self.__encoder.guardarJSONArchivo(peliculas_data)
+
         
     def MostrarDatosPeli(self, id):
         index = self.__view.listBox.curselection()[0]
